@@ -5,7 +5,7 @@ import select
 """
 shahar rosenthal
 server
-2/11/2022
+2 / 11 / 2022
 """
 QUEUE_SIZE = 10
 IP = '0.0.0.0'

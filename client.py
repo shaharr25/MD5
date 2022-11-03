@@ -1,13 +1,12 @@
 import os
 import socket
 from threading import Thread
-from os import cpu_count
 import hashlib
 
 """
 shahar rosenthal
 client
-2/11/2022
+2 / 11 / 2022
 """
 
 SERVER_IP = '127.0.0.1'
@@ -71,7 +70,7 @@ def main():
                 thread.start()
             for i in threads:
                 i.join()
-        client_socket.send(('a'+ANSWER).encode())
+        client_socket.send(('a' + ANSWER).encode())
 
     except socket.error as err:
         print('error in communication with server - ' + str(err))
